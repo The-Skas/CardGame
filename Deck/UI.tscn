@@ -1,0 +1,63 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://UI.gd" type="Script" id=1]
+[ext_resource path="res://Deck/VT323.fnt" type="BitmapFont" id=2]
+[ext_resource path="res://Deck/Card.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/Card_Select.png" type="Texture" id=4]
+
+[node name="Node2D" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="Output" type="RichTextLabel" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 18.0
+margin/top = 610.0
+margin/right = 781.0
+margin/bottom = 699.0
+custom_fonts/normal_font = ExtResource( 2 )
+bbcode/enabled = false
+bbcode/bbcode = ""
+visible_characters = -1
+
+[node name="CardPos1" type="Node2D" parent="."]
+
+transform/pos = Vector2( 172.79, 746.116 )
+transform/scale = Vector2( 1.09141, 1.64063 )
+
+[node name="Card1" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 175.7, 745.981 )
+transform/scale = Vector2( 1.18234, 1.14725 )
+
+[node name="Card2" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 244.173, 746.331 )
+transform/scale = Vector2( 1.18234, 1.14725 )
+
+[node name="Card3" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 317.317, 747.211 )
+transform/scale = Vector2( 1.18234, 1.14725 )
+
+[node name="Card5" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 452.892, 750.253 )
+transform/scale = Vector2( 1.18234, 1.14725 )
+
+[node name="Card4" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 388.721, 747.301 )
+transform/scale = Vector2( 1.18234, 1.14725 )
+
+[node name="Outline" type="Sprite" parent="."]
+
+transform/pos = Vector2( 171.668, 745.648 )
+transform/scale = Vector2( 0.180332, 0.17342 )
+texture = ExtResource( 4 )
+
+

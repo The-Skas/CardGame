@@ -1,0 +1,6 @@
+[gd_resource type="ConvexPolygonShape" format=1]
+
+[resource]
+
+points = Vector3Array(  )
+

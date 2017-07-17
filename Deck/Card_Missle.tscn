@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://Deck/Card.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Deck/Card_Missle.gd" type="Script" id=2]
+[ext_resource path="res://Image.png" type="Texture" id=3]
+
+[node name="Node2D" instance=ExtResource( 1 )]
+
+script/script = ExtResource( 2 )
+
+[node name="Image" parent="."]
+
+transform/pos = Vector2( -2.74751, -1.04743 )
+transform/scale = Vector2( 0.0453102, 0.0278199 )
+texture = ExtResource( 3 )
+
+
